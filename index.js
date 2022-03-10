@@ -4,9 +4,16 @@ const port = 3000;
 
 app.set('view engine','ejs')
 
+app.use(express.static(__dirname));
+
 app.get('/', (req, res) => {
   var title = 'My Home Page';
-  res.render('index', {title:title});
+  res.render('pages/index', {title:title});
+});
+
+app.get('/about-us', (req, res) => {
+  var title = 'My About Us Page';
+  res.render('pages/about-us', {title:title});
 });
 
 app.listen(port, () => {
