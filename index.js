@@ -15,19 +15,19 @@ app.get('/', (req, res) => {
   res.render('pages/index', {title:title});
 });
 
-app.get('/lakers', (req, res) => {
+app.get('/kiki', (req, res) => {
   var title = 'Kiki Delivery';
   res.render('pages/kiki', {title:title});
 });
 
-app.get('/warriors', (req, res) => {
+app.get('/spirited', (req, res) => {
   var title = 'Spirited Away';
   res.render('pages/spirited', {title:title});
 });
 
-app.get('/clippers', (req, res) => {
+app.get('/totoro', (req, res) => {
   var title = 'Totoro';
-  res.render('pages/Totoro', {title:title});
+  res.render('pages/totoro', {title:title});
 });
 
 //list page of users
